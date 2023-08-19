@@ -1,0 +1,24 @@
+<div class="container-custom">
+    <div class="row">
+        <div class="col-md-9 animate__animated animate__fadeInUp">
+            <h1>{{category.name}}</h1>
+            <p>{{category.description}}</p>
+            <div class="row">
+                <div *ngFor="let post of postsResult" class="col-md-4">
+                    <app-card-post [postImage]="post.image" [title]="post.title" [description]="post.description"></app-card-post>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn-custom btn-primary-custom mt-5 mb-5" (click)="setPosts()">Ver mas</button>
+            </div>
+        </div>
+        <div class="col-md-3 pt-5 animate__animated animate__fadeInUp">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Buscar...">
+            </div>
+            <app-card-profile></app-card-profile>
+            <app-aside-categories></app-aside-categories>
+        </div>
+    </div>
+</div>

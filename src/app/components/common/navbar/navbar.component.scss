@@ -1,0 +1,51 @@
+nav {
+    background-color: #006266 !important;
+    color: white !important;
+    a {
+        color: white;
+    }
+}
+
+.nav-item {
+    margin: .2rem 1rem;
+}
+
+.custom-links {
+    position: absolute;
+    width: 15rem;
+    right: 0;
+    ul {
+        background-color: #006266 !important;
+        color: white !important;
+        right: 0 !important;
+    }
+}
+a:hover{
+    color: black !important;
+}
+
+a:active{
+    background-color: rgba($color: #006266, $alpha: .6);
+
+}
+
+.logo {
+    margin: .4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+}
+
+.img-profile {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+}
+
+@media (max-width: 991px) {
+    .custom-links {
+        z-index: 999;
+        right: auto;
+    }
+}

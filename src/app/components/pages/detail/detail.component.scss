@@ -1,0 +1,24 @@
+figure {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+    height: 80vh;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.input-box {
+    word-wrap: break-word;
+    word-break: break-word;
+  }

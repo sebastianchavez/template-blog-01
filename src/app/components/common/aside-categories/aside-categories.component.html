@@ -1,0 +1,6 @@
+<aside>
+    <h4>Revisa tambien...</h4>
+    <div *ngFor="let category of categories">
+        <img [src]="category.image" class="pointer" (click)="goToPage(category.route)">
+    </div>
+</aside>

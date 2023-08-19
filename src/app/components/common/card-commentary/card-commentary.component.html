@@ -1,0 +1,12 @@
+<div class="commentary">
+        <div class="container-img-profile" *ngIf="isStart || isMobileSize">
+                <div class="img-profile" [ngStyle]="{'background-image': 'url('+ commentary.image +')'}"></div>
+        </div>
+        <div class="container-commentary">
+            <h5>{{commentary.name}}</h5>
+            <p>{{commentary.commentary}}</p>
+        </div>
+        <div class="container-img-profile" *ngIf="!isStart && !isMobileSize">
+            <div class="img-profile" [ngStyle]="{'background-image': 'url('+ commentary.image +')'}"></div>
+    </div>
+</div>

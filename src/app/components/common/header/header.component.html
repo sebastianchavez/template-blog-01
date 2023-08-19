@@ -1,0 +1,28 @@
+<header>
+    <div class="carousel animate__animated animate__fadeIn">
+        <ngb-carousel >
+            <ng-template ngbSlide >
+            <div class="img-header" [ngStyle]="{'background-image': 'url(assets/imgs/header01.jpg)'}">
+                <div class="container-card">
+                    <div class="custom-card ms-auto">
+                        <div class="text-center">
+                            <h2>Taller de literatura</h2>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos id, ex in a ut vero veritatis earum blanditiis. Obcaecati esse earum vero odit provident mollitia quae eum impedit vel officiis!</p>
+                        <button class="btn-secondary-custom-outline" (click)="goToPage()">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="assets/imgs/header01.jpg"  /> -->
+            </ng-template>
+            <ng-template ngbSlide >
+            <div class="img-header" [ngStyle]="{'background-image': 'url(assets/imgs/header02.jpg)'}"></div>
+            <!-- <img src="assets/imgs/header02.jpg"  /> -->
+            </ng-template>
+            <ng-template ngbSlide >
+            <div class="img-header" [ngStyle]="{'background-image': 'url(assets/imgs/header03.jpg)'}"></div>
+            <!-- <img src="assets/imgs/header03.jpg"  /> -->
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</header>

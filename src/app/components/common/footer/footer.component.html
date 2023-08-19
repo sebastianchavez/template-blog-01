@@ -1,0 +1,18 @@
+<footer>
+    <div class="links">
+        <div *ngFor="let link of links" class="link" [routerLink]="link.route">
+          <a class="nav-link" [routerLink]="link.route">{{ link.text }}</a>
+        </div>
+    </div>
+
+    <div class="icons">
+        <div *ngFor="let icon of icons">
+            <img [src]="icon.image" >
+        </div>
+    </div>
+    <div class="text-center">
+        <a class="nav-link pt-1">
+                Desarrollado por Tecnodesa SPA.
+        </a>
+    </div>
+</footer>

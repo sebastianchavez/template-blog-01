@@ -1,0 +1,45 @@
+.carousel {
+    height: 90vh;
+}
+
+img {
+    height: 90vh;
+    width: 100%;
+}
+
+.img-header{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: auto;
+    height: 90vh;
+    width: 100%;
+} 
+
+.container-card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    padding-right: 3rem;
+}
+
+.custom-card {
+    background-color: white;
+    width: 30rem;
+    height: 40vh;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 767px) {
+    .container-card{
+        padding: 1rem;
+    }
+}

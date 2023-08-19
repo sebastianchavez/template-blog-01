@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">NombreApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li *ngFor="let m of menu" class="nav-item">
+              <a class="nav-link" [routerLink]="m.route">{{ m.text }}</a>
+            </li>
+            <li *ngFor="let i of icons" class="logo pointer">
+                <img [src]="i.image">
+            </li>
+            <li class="logo pointer">
+              <span dropdown >
+                <a href id="basic-link" dropdownToggle (click)="false"
+                   aria-controls="basic-link-dropdown">
+                <img src="assets/imgs/profile.jpeg" class="img-profile" >
+              </a>
+              <div class="custom-links ms-auto">
+                <ul id="basic-link-dropdown" *dropdownMenu class="dropdown-menu"
+                    role="menu" aria-labelledby="basic-link">
+                  <li>
+                    <a class="dropdown-item" routerLink="/mi-perfil">Mi Perfil</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item pointer" (click)="logOut()">Cerrar Sesion</a>
+                  </li>
+                </ul>
+              </div>
+              </span>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>

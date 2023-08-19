@@ -1,0 +1,13 @@
+<div class="card-post">
+    <div class="container-img" (click)="goToDetail()">
+        <figure><img [src]="postImage" /></figure>
+        <!-- <div class="img-post" [ngStyle]="{'background-image': 'url('+ postImage +')'}" ></div> -->
+    </div>
+    <div class="detail-post">
+        <div class="container-title">
+            <h5 class="mt-2">{{title}}</h5>
+            <label class="date">{{date | date:'dd-MM-YYYY'}}</label>
+        </div>
+        <p>{{description}}</p>
+    </div>
+</div>

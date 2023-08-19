@@ -1,0 +1,12 @@
+<div class="card-profile">
+    <div class="img-profile" [ngStyle]="{'background-image': 'url('+ profileImage +')'}"></div>
+    <div class="detail-profile">
+        <h4 class="mt-2">Nombre y Apellido</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi voluptatem. At, assumenda vitae. Libero adipisci fuga dicta ratione eaque nulla inventore culpa accusamus soluta? Dolorum quo consequatur quos ad?</p>
+        <div class="icons">
+            <div *ngFor="let icon of icons">
+                <img [src]="icon.image" >
+            </div>
+        </div>
+    </div>
+</div>

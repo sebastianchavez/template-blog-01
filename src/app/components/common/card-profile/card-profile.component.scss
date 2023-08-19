@@ -1,0 +1,33 @@
+.card-profile{
+    margin-top: 2rem;
+    background-color: rgba($color: #006266, $alpha: .05);
+}
+
+.img-profile{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: auto;
+    height: 25rem;
+} 
+
+.detail-profile{
+    padding: .5rem 1rem;
+    p{
+        margin-top: 1rem;
+    }
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    img {
+        margin: .4rem 1rem;
+        width: 2rem;
+        cursor: pointer;
+    }
+}

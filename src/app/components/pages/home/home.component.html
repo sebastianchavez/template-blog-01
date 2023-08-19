@@ -1,0 +1,75 @@
+<div class="container-custom mb-5">
+    <div class="row">
+        <div *ngIf="isMobileSize" class="col-md-3 pt-5 animate__animated animate__fadeInUp">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Buscar...">
+            </div>
+            <app-card-profile></app-card-profile>
+            <app-aside-categories></app-aside-categories>
+        </div>
+        <div class="col-md-9 p-4 ">
+            <section class="animate__animated animate__fadeInUp">
+                <h1>{{categories[0].name}}</h1>
+                <p>{{categories[0].description}}</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <figure class="img-header-left"><img [src]="posts[0].image" /></figure>
+                        <!-- <div class="img-header-left" [ngStyle]="{'background-image': 'url('+ posts[0].image +')'}"></div> -->
+                        <h4 class="mt-2">{{posts[0].title}}</h4>
+                        <p>{{posts[0].description}}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-header-right">
+                            <figure class="img-header-right"><img [src]="posts[1].image" /></figure>
+                            <!-- <div class="img-header-right" [ngStyle]="{'background-image': 'url('+ posts[1].image +')'}"></div> -->
+                            <h4 class="mt-2">{{posts[1].title}}</h4>
+                            <p>{{posts[1].description}}</p>
+                        </div>
+                        <div class="container-header-right">
+                            <figure class="img-header-right"><img [src]="posts[2].image" /></figure>
+                            <!-- <div class="img-header-right" [ngStyle]="{'background-image': 'url('+ posts[2].image +')'}"></div> -->
+                            <h4 class="mt-2">{{posts[2].title}}</h4>
+                            <p>{{posts[2].description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="animate__animated animate__fadeInUp">
+                <h1>{{categories[1].name}}</h1>
+                <p>{{categories[1].description}}</p>
+                <div class="row">
+                    <div *ngFor="let post of posts" class="col-md-4">
+                        <app-card-post [postImage]="post.image" [title]="post.title" [description]="post.description"></app-card-post>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div *ngIf="!isMobileSize" class="col-md-3 pt-5 animate__animated animate__fadeInUp">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Buscar...">
+            </div>
+            <app-card-profile></app-card-profile>
+            <app-aside-categories></app-aside-categories>
+        </div>
+    </div>
+    <div class="row">
+        <section class="col-md-12 animate__animated animate__fadeInUp">
+            <h1>{{categories[2].name}}</h1>
+            <p>{{categories[2].description}}</p>
+            <div class="row">
+                <div *ngFor="let post of posts" class="col-md-4">
+                    <app-card-post [postImage]="post.image" [title]="post.title" [description]="post.description"></app-card-post>
+                </div>
+            </div>
+        </section>
+        <section class="col-md-12 animate__animated animate__fadeInUp">
+            <h1>{{categories[3].name}}</h1>
+            <p>{{categories[3].description}}</p>
+            <div class="row">
+                <div *ngFor="let post of posts" class="col-md-4">
+                    <app-card-post [postImage]="post.image" [title]="post.title" [description]="post.description"></app-card-post>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

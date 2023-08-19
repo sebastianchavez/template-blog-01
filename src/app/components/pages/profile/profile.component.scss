@@ -1,0 +1,21 @@
+.profile{
+    padding: 4rem 1rem;
+}
+
+.img-profile{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: auto;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 200px;
+} 
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+}

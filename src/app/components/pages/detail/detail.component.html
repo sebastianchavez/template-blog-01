@@ -1,0 +1,24 @@
+<div class="container-custom detail">
+    <div class="row">
+        <div class="col-md-9 animate__animated animate__fadeInUp">
+            <h1 class="mb-4 mt-4">{{post.title}}</h1>
+            <figure><img [src]="post.image" alt=""></figure>
+            <button class="btn-custom btn-primary-custom mt-5 mb-5">{{post.category}}</button>
+            <p>{{post.description}}</p>
+            <div class="alert-warning mt-4">
+                Debe autenticarse para poder ver el link
+            </div>
+            <h2 class="mt-4">Deja un comentario</h2>
+            <textarea rows="3" class="form-control"></textarea>
+            <button class="btn-secondary-custom-outline mt-4">
+                Dejar comentario
+            </button>
+            <div class="mt-4" *ngFor="let commentary of [1,2,3,4,5]; let i = index;">
+                <app-card-commentary [isStart]="i % 2 == 0"></app-card-commentary>
+            </div>
+        </div>
+        <div class="col-md-3 animate__animated animate__fadeInUp">
+            <app-aside-categories></app-aside-categories>
+        </div>
+    </div>
+</div>
